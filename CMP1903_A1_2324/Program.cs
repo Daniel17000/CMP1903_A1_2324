@@ -21,6 +21,7 @@ namespace CMP1903_A1_2324
             int total = game.RollAllTheDice();
             // Will perform all the testing in place
             Testing.Test();
+            Console.ReadLine();
 
         }
     }

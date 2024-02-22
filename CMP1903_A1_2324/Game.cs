@@ -29,7 +29,7 @@ namespace CMP1903_A1_2324
                 total += rolls[i];
             }
 
-            Console.WriteLine("Individual die rolls: " + string.Join(",", rolls));
+            Console.WriteLine("Individual die rolls: " + string.Join(", ", rolls));
             Console.WriteLine("Total of the three dice rolls; " + total);
             return total;
         }
