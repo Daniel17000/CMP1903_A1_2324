@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace CMP1903_A1_2324
 {
-    internal class Die
+    public class Die
     {
-        /*
-         * The Die class should contain one property to hold the current die value,
-         * and one method that rolls the die, returns and integer and takes no parameters.
-         */
 
-        //Property
+        private static Random random = new Random();    // This is to hold a single instance of Random
 
+        //Private fields to store values
+        private int currentValue;
+        
 
-        //Method
-
-
+        public int Roll()
+        {
+            currentValue = random.Next(1,7); // This is inclusive, gets a number between 1 and 6
+            return currentValue;
+        }
     }
 }
